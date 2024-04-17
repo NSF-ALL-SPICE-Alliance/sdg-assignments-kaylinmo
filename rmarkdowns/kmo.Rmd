@@ -203,7 +203,7 @@ Histograms are awesome at visualizing distributions of a single continuous varia
 
 ```{r}
 ggplot(sdr_data, aes(x = goal_7_score)) +_goal_13_score,colorgeom_histogram()
-
+``
 
 Each bar/bin represents a range of SDG 4 Scores. There are 30 bars/bins so each bar/bin has a range of about 3.3. 
   
