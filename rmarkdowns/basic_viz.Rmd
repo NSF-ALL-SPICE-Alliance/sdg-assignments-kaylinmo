@@ -1,3 +1,4 @@
+
 ---
 title: "Basic Visualizations"
 author: "Connor Flynn | Victoria DelaCruz"
@@ -189,6 +190,9 @@ ggplot(sdr_data, aes(x= goal_3_score, y = country)) +
 
 Interpretation:
 As we can see in the Oceania region, most Countries do not have the necessary data to calculate a SDG 3 Score. Sub-Saharan Africa appears to have some of the lowest Goal 3 Scores, while OECD has some of the highest.
+```{r}
+
+```
 
 #### <span style="color: red;">Challenge 2</span>
 Create a new bar chart with countries only from the MENA region. 

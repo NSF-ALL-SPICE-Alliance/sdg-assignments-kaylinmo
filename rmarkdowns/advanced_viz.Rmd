@@ -107,8 +107,8 @@ Interactive visualizations are a really exciting part of data science! Interacti
 ```{r}
 goal_4_histogram <- ggplot(sdr_data, aes(x = goal_4_score, fill=regions_used_for_the_sdr)) +
   geom_histogram() +
-  theme_minimal() +
-  scale_fill_viridis_d() +
+  theme_dark() +
+  scale_fill_viridis_d(option ="plasma") +
   labs(title = "Distributions of SDG 4 Scores",
        x = "SDG 4 Score",
        y = "Number of Countries",
@@ -136,16 +136,32 @@ ggplot(data = sdr_data, aes(x= goal_3_score, y = goal_4_score, color = regions_u
 
 *Edit the code chunk above* that generates the plot to:
 
-- add a theme with theme_minimal()
+- add a theme with theme_dark()+
 - add a color palette with scale_fill_viridis_d()
 - add the appropriate title, x axis label, y axis label, and legend label with labs()
+```{r}
+
+```
 
 *AND*
 
 - make it interactive with ggplotly()
 
   - hint: you will have to assign a name to the plot
+  
+```{r}
+ggplot(data = sdr_data, aes(x= goal_3_score, y = goal_4_score, color = regions_used_for_the_sdr)) +
+  geom_point()
+  theme_minimal()+
+  scale_fill_viridis_d(option ="magma")+
+  labs(x="Goal 3 Score",
+       y="Goal 4 Score",
+       color-"Region")
+  ggplotly(goal_3_4_scatter_plot)
+  
+```
 
+       
 
 
 ### Creating interactive maps with `leaflet`
