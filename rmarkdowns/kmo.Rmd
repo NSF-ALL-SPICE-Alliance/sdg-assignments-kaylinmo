@@ -192,6 +192,9 @@ As we can see in the Oceania region, most Countries do not have the necessary da
 
 #### <span style="color: red;">Challenge 2</span>
 Create a new bar chart with countries only from the MENA region. 
+```{r}
+
+```
 
 ### Histogram
 
